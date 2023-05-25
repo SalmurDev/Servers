@@ -6,7 +6,7 @@
 // salvo nel file
 
 
-let ccs = require('../case_cinematografiche.json')
+import ccs from '../db/case_cinematografiche.json' assert { type: 'json' }
 
 let id = 1
 ccs = ccs.map(cc => {
@@ -15,4 +15,4 @@ ccs = ccs.map(cc => {
     return cc
 })
 
-require('fs').writeFileSync('../case_cinematografiche.json', JSON.stringify(ccs, null, '  '))
+require('fs').writeFileSync('../db/case_cinematografiche.json', JSON.stringify(ccs, null, '  '))
