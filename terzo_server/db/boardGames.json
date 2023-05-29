@@ -1,0 +1,121 @@
+[
+    {
+        "id": 1,
+        "name": "Brass:Birmingham",
+        "year": "2018",
+        "rank": 1,
+        "rating": 8.423,
+        "type": ["strategy"],
+        "designers": ["Gavan Brown", "Matt Tolman", "Martin Wallace"],
+        "artists": ["Lina Cossette", "David Forest", "Damien Mammoliti"],
+        "publishers": ["Roxley"]        
+    },
+    {
+        "id": 2,
+        "name": "Pandemic Legacy: Season 1",
+        "year": "2015",
+        "rank": 2,
+        "rating": 8.391,
+        "price": 71.99,
+        "type": ["strategy","thematic"],
+        "designers": ["Rob Daviau","Matt Leacock"],
+        "artists": ["Chris Quilliams"],
+        "publishers": ["Z-Man Games"]
+    },
+    {
+        "id": 3,
+        "name": "GloomHaven",
+        "year": "2017",
+        "rank": 3,
+        "rating": 8.391,
+        "price": 71.99,
+        "type": ["strategy","thematic"],
+        "designers": ["Isaac Childres"],
+        "artists": ["Alexandr Elichev", "Josh T. McDowell", "Alvaro Nebot"],
+        "publishers": ["Cephalofair Games"]
+    },
+    {
+        "id": 4,
+        "name": "Ark Nova",
+        "year": "2021",
+        "rank": 4,
+        "rating": 8.300,
+        "price": 62.99,
+        "type": ["strategy"],
+        "designers": ["Mathias Wigge"],
+        "artists": ["Steffen Bieker", "Loïc Billiau", "Dennis Lohausen", "Christof Tisch"],
+        "publishers": ["Feuerland Spiele"]
+    },
+    {
+        "id": 5,
+        "name": "Twilight Imperium: Fourth Edition",
+        "year": "2017",
+        "rank": 5,
+        "rating": 8.242,
+        "price": 125.39,
+        "type": ["strategy","thematic"],
+        "designers": ["Dane Beltrami", "Corey Konieczka", "Christian T. Petersen"],
+        "artists": ["Scott Schomburg"],
+        "publishers": ["Fantasy Flight Games"]
+    },
+    {
+        "id": 6,
+        "name": "Terraforming Mars",
+        "year": "2016",
+        "rank": 6,
+        "rating": 8.234,
+        "price": 57.31,
+        "type": ["strategy","thematic"],
+        "designers": ["Jacob Fryxelius"],
+        "artists": ["Isaac Fryxelius"],
+        "publishers": ["FryxGames"]
+    },
+    {
+        "id": 7,
+        "name": "Gloomhaven: Jaws of the Lion",
+        "year": "2020",
+        "rank": 7,
+        "rating": 8.208,
+        "price": 25.49,
+        "type": ["strategy","thematic"],
+        "designers": ["Isaac Childres"],
+        "artists": ["Francesca Baerald", "David Demaret", "Alexandr Elichev"],
+        "publishers": ["Cephalofair Games"]
+    },
+    {
+        "id": 8,
+        "name": "War of the Ring: Second Edition",
+        "year": "2011",
+        "rank": 8,
+        "rating": 8.170,
+        "price": 68.28,
+        "type": ["war","thematic"],
+        "designers": ["Roberto Di Meglio", "Marco Maggi", "Francesco Nepitello"],
+        "artists": ["John Howe", "Fabio Maiorana"],
+        "publishers": ["Ares Games"]
+    },
+    {
+        "id": 9,
+        "name": "Star Wars: Rebellion",
+        "year": "2016",
+        "rank": 9,
+        "rating": 8.167,
+        "price": 71.99,
+        "type": ["thematic"],
+        "designers": ["Corey Konieczka"],
+        "artists": ["Matt Allsopp", "David Ardila", "Balaskas", "Tiziano Baracchi"],
+        "publishers": ["Fantasy Flight Games"]
+    },
+    {
+        "id": 10,
+        "name": "Dune: Imperium",
+        "year": "2020",
+        "rank": 10,
+        "rating": 8.166,
+        "price": 47.95,
+        "type": ["strategy"],
+        "designers": ["Paul Dennen"],
+        "artists": ["Clay Brooks", "Raul Ramos", "Nate Storm"],
+        "publishers": ["Dire Wolf"]
+    }    
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "name": "Gavan Brown",
+        "nation": "Canada",
+        "age": 42,
+        "firstGame": 2011,
+        "gender": "male"
+    },
+    {
+        "id": 2,
+        "name": "Matt Tolman",
+        "nation": "Canada",
+        "age": 38,
+        "firstGame": 2011,
+        "gender": "male"
+    },
+    {
+        "id": 3,
+        "name": "Martin Wallace",
+        "nation": "England",
+        "age": 60,
+        "firstGame": 1993,
+        "gender": "male"
+    },
+    {
+        "id": 4,
+        "name": "Rob Daviau",
+        "nation": "USA",
+        "age": 51,
+        "firstGame": 2000,
+        "gender": "male"
+    },
+    {
+        "id": 5,
+        "name": "Matt Leacock",
+        "nation": "USA",
+        "age": 47,
+        "firstGame": 2008,
+        "gender": "male"
+    },
+    {
+        "id": 6,
+        "name": "Isaac Childres",
+        "nation": "USA",
+        "age": 43,
+        "firstGame": 2015,
+        "gender": "male"
+    },
+    {
+        "id": 7,
+        "name": "Mathias Wigge",
+        "nation": "Germany",
+        "age": 34,
+        "firstGame": 2021,
+        "gender": "male"
+    },
+    {
+        "id": 8,
+        "name": "Dane Beltrami",
+        "nation": "USA",
+        "age": 36,
+        "firstGame": 2016,
+        "gender": "male"
+    },
+    {
+        "id": 9,
+        "name": "Corey Konieczka",
+        "nation": "USA",
+        "age": 56,
+        "firstGame": 2006,
+        "gender": "male"
+    },
+    {
+        "id": 10,
+        "name": "Christian T.Petersen",
+        "nation": "USA",
+        "age": 59,
+        "firstGame": 1997,
+        "gender": "male"
+    },
+    {
+        "id": 11,
+        "name": "Jacob Frixelius",
+        "nation": "Sweden",
+        "age": 44,
+        "firstGame": 2011,
+        "gender": "male"
+    },
+    {
+        "id": 12,
+        "name": "Roberto Di Meglio",
+        "nation": "Italy",
+        "age": 57,
+        "firstGame": 1996,
+        "gender": "male"
+    },
+    {
+        "id": 13,
+        "name": "Marco Maggi",
+        "nation": "Italy",
+        "age": 52,
+        "firstGame": 2000,
+        "gender": "male"
+    },
+    {
+        "id": 14,
+        "name": "Francesco Nepitello",
+        "nation": "Italy",
+        "age": 49,
+        "firstGame": 2000,
+        "gender": "male"
+    },
+    {
+        "id": 15,
+        "name": "Paul Dennen",
+        "nation": "Sweden",
+        "age": 40,
+        "firstGame": 2016,
+        "gender": "male"
+    }
+]
