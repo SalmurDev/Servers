@@ -8,6 +8,7 @@ app.use(bodyParser.json())
 
 import * as user from './user-routes.mjs'
 import * as todo from './todo-routes.mjs'
+import * as todoUser from './routes-user-todo.mjs'
 
 app.get('/users', user.getAll)
 app.get('/users/search', user.search)
@@ -22,6 +23,10 @@ app.get('/todos/:id', todo.get)
 app.put('/todos/:id', todo.update)
 app.delete('/todos/:id', todo.remove)
 app.post('/todos', todo.create)
+
+app.post('/users/:idu/todos/:idt', todoUser.create)
+app.delete('/users/:idu/todos/:idt', todoUser.remove)
+app.put('/users/:idu/todos/:idt/completed', todoUser.completed)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)

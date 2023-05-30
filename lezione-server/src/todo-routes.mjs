@@ -4,8 +4,10 @@
 
 import fs from 'node:fs/promises'
 import todos from '../db/todos.json' assert { type: 'json' }
+import todoUsers from '../db/todos-users.json' assert { type: 'json' }
 
 const DB_PATH = './db/todos.json'
+const DB_PATH_TODOS_USERS = './db/todos-users.json'
 
 let NEXT = Object
   .keys(todos)
@@ -75,6 +77,15 @@ export const remove = async (req, res) => {
   let todo = todos[req.params.id]
   if (todo) {
     delete todos[req.params.id]
+    Object.keys(todoUsers).forEach(idut => {
+      let split = idut.split("-")
+      if(split[1] == req.params.id){
+        delete todoUsers[idut]
+      }
+    })
+   
+    await fs.writeFile(DB_PATH_TODOS_USERS, JSON.stringify(todoUsers, null, '  '))
+
     await fs.writeFile(DB_PATH, JSON.stringify(todos, null, '  '))
     res.status(200).end()
   } else {

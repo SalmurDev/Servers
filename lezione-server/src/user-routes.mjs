@@ -1,7 +1,9 @@
 import fs from 'node:fs/promises'
 import users from '../db/users.json' assert { type: 'json' }
+import todoUsers from '../db/todos-users.json' assert { type: 'json' }
 
 const DB_PATH = './db/users.json'
+const DB_PATH_TODOS_USERS = './db/todos-users.json'
 
 let NEXT = Object
   .keys(users)
@@ -71,6 +73,17 @@ export const remove = async (req, res) => {
   let user = users[req.params.id]
   if (user) {
     delete users[req.params.id]
+
+    // make sure we delete any todos-users
+    // related to this user
+    Object.keys(todoUsers).forEach(idut => {
+      let split = idut.split('-')
+      if (split[0] == req.params.id) {
+        delete todoUsers[idut]
+      }
+    })
+    await fs.writeFile(DB_PATH_TODOS_USERS, JSON.stringify(todoUsers, null, '  '))
+    
     await fs.writeFile(DB_PATH, JSON.stringify(users, null, '  '))
     res.status(200).end()
   } else {
