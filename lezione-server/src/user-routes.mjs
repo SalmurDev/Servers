@@ -27,7 +27,7 @@ export const create = async (req, res) => {
 
 export const get = (req, res) => {
   let user = users[req.params.id]
-  if (user) {
+  if (user && !user.deleted) {
     res.send({ data: user })
   } else {
     res
@@ -41,7 +41,7 @@ export const get = (req, res) => {
 }
 
 export const getAll = (req, res) => {
-  res.send(users)
+  res.send(Object.entries(users).filter((el)=> (!el[1].deleted)))
 }
 
 export const search = (req, res) => {
@@ -53,6 +53,7 @@ export const search = (req, res) => {
 
 export const update = async (req, res) => {
   let user = users[req.params.id]
+  console.log(req.body)
   if (user) {
     let newUser = { ...user, ...req.body }
     users[req.params.id] = newUser
@@ -72,8 +73,10 @@ export const update = async (req, res) => {
 export const remove = async (req, res) => {
   let user = users[req.params.id]
   if (user) {
-    delete users[req.params.id]
-
+    let newUser = {...user, deleted: true}
+    users[req.params.id] = newUser
+    await fs.writeFile(DB_PATH, JSON.stringify(users, null, '  '))
+    
     // make sure we delete any todos-users
     // related to this user
     Object.keys(todoUsers).forEach(idut => {

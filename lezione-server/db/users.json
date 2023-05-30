@@ -1,10 +1,17 @@
 {
   "1": {
     "name": "John",
-    "surname": "Smith"
+    "surname": "Smith",
+    "deleted": false
   },
   "2": {
     "name": "Marie",
-    "surname": "Curie"
+    "surname": "Curie",
+    "deleted": false
+  },
+  "3": {
+    "name": "Gennaro",
+    "surname": "Esposito",
+    "deleted": true
   }
 }
