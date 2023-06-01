@@ -5,7 +5,7 @@ async function call() {
     name: 'Marie',
     surname: 'Curie'
   })
-  console.log(res.status, res.data)
+  console.log(res.status, res.data, res.headers)
 }
 
 call()
