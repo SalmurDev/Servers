@@ -3,7 +3,6 @@ import users from '../db/users.json' assert { type: 'json' }
 import todoUsers from '../db/todos-users.json' assert { type: 'json' }
 import passwords from '../db/passwords.json' assert { type: 'json'}
 import axios from 'axios'
-import { log } from 'node:console'
 
 const DB_PATH = './db/users.json'
 const DB_PATH_TODOS_USERS = './db/todos-users.json'
@@ -36,13 +35,10 @@ export const register = async (req, res) => {
 }
 
 export const login = async (req, res) => {
-  console.log(req.body.name, req.body.password)
   for (let i = 1; i <= NEXT_USER; i++) {
-    console.log(passwords[i].name, passwords[i].password)
     if (req.body.name == passwords[i].name && req.body.password == passwords[i].password) {
       req.session.user = req.query.name;
       req.session.logged = true;
-      console.log(req.session)
       res
         .status(200)
         .send({
