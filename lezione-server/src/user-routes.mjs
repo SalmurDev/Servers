@@ -10,8 +10,8 @@ const DB_PATH_PASSWORDS = './db/passwords.json'
 
 let NEXT_USER = Object
   .keys(passwords)
-  .reduce((biggest, id) => biggest > parseInt(id, 10) ? biggest : 
-  parseInt(id, 10),  0)
+  .reduce((biggest, id) => biggest > parseInt(id, 10) ? biggest :
+    parseInt(id, 10), 0)
 
 export const register = async (req, res) => {
   console.log(req.body);
@@ -21,6 +21,20 @@ export const register = async (req, res) => {
       .send({
         error: true,
         message: 'name or password not found'
+      })
+    return
+  }
+  let findUser = false
+  Object.entries(passwords).forEach((el) => {
+    console.log(el[1].name)
+    if (el[1].name == req.body.name) findUser = true
+  })
+  if(findUser == true){
+    res
+      .status(409)
+      .send({
+        error: true,
+        message: 'username already taken'
       })
     return
   }
