@@ -8,8 +8,8 @@ const DB_PATH_ALL = './db/students.json'
 const GROUPS = {
     1: 'https://5e81-2001-b07-a9a-89a8-fc69-90ae-c7c4-8dbc.ngrok-free.app/digitazon/2023/02/group/1/students',
     2: 'http://localhost:3000/digitazon/2023/02/group/2/students',
-    3: 'https://4aac-151-33-19-106.ngrok-free.app/digitazon/2023/02/group/3/students',
-    4: 'https://f151-93-41-116-144.ngrok-free.app/digitazon/2023/02/group/4/students'
+    3: 'https://878f-151-33-19-106.ngrok-free.app/digitazon/2023/02/group/3/students',
+    4: 'https://5392-2001-b07-6474-5b1b-a5b5-1e51-cec-c622.ngrok-free.app/digitazon/2023/02/group/4/students'
 }
 
 export const welcome = (req, res) => {
@@ -25,7 +25,7 @@ export const get = async (req, res) => {
     .status(404)
     .send({
         error: true,
-        message: 'wrong key'
+        message: 'ritenta, sarai più fortunato'
     })
 }
 export const getAll = (req, res) => {

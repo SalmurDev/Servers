@@ -1,92 +1,22 @@
 [
   {
-    "name": "Gabriele",
-    "surname": "Notonica",
-    "secret": "Forza Inter!"
-  },
-  {
-    "name": "Cristian",
-    "surname": "Di Napoli",
-    "secret": "Terzo Scudetto"
-  },
-  {
-    "name": "Daniele",
-    "surname": "Fornasari",
-    "secret": "Forza Milan!"
-  },
-  {
-    "name": "Alessandro",
-    "surname": "Gradi",
-    "secret": "Forza Viola!"
-  },
-  {
-    "name": "Morena",
-    "surname": "Masala",
-    "secret": "Life finds a way"
-  },
-  {
-    "name": "Filippo",
-    "surname": "Bortolotto",
-    "secret": "Salmur"
-  },
-  {
-    "name": "Francesco",
-    "surname": "Gentile",
-    "secret": "telefono"
-  },
-  {
-    "name": "Riccardo",
-    "surname": "Masiero",
-    "secret": "palla"
-  },
-  {
-    "name": "Davide",
-    "surname": "Grilletto",
-    "secret": "me rompo er cazzo facilmente"
-  },
-  {
-    "name": "Claudio",
-    "surname": "De Paolis",
-    "secret": "er fijo de' a lupa"
-  },
-  {
-    "name": "Giada",
-    "surname": "Varri",
-    "secret": "il segreto del grande successo sta nel lavoro di squadra"
-  },
-  {
-    "name": "Salvatore",
-    "surname": "Tosich",
-    "secret": "Forza Napoli!"
-  },
-  {
-    "name": "Selima",
-    "surname": "Bascherini",
-    "secret": "AlWaiz Zlatan"
-  },
-  {
-    "name": "Emanuele",
-    "surname": "Cau",
-    "secret": "Ajo a Ippuntare"
-  },
-  {
-    "name": "Matteo",
-    "lastname": "Andreoni",
-    "secret": "Hello world"
-  },
-  {
-    "name": "Osvaldo",
-    "lastname": "Roscani",
-    "secret": "B modular"
-  },
-  {
-    "name": "Gianmarco",
-    "lastname": "Vinzon",
-    "secret": "Darius"
-  },
-  {
-    "name": "Siegfred",
-    "lastname": "Feranil",
-    "secret": "_1235è"
-  }
+  "name": "Matteo",
+  "lastname": "Andreoni",
+  "secret": "Hello world!"
+},
+{
+  "name": "Osvaldo",
+  "lastname": "Roscani",
+  "secret": "!B modular"
+},
+{
+  "name": "Gianmarco",
+  "lastname": "Vinzon",
+  "secret": "Dar!ius"
+},
+{
+  "name": "Siegfred",
+  "lastname": "Feranil",
+  "secret": "_!1235è"
+}
 ]
