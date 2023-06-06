@@ -1,22 +1,22 @@
-{
-    "1": {
+[
+    {
         "name": "Filippo",
         "surname": "Bortolotto",
         "secret": "Salmur"
     },
-    "2": {
+    {
         "name": "Francesco",
         "surname": "Gentile",
         "secret": "telefono"
     },
-    "3": {
+    {
         "name": "Riccardo",
         "surname": "Masiero",
         "secret": "palla"
     },
-    "4": {
+    {
         "name": "Davide",
         "surname": "Grilletto",
         "secret": "me rompo er cazzo facilmente"
     }
-}
+]
