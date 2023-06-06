@@ -12,10 +12,6 @@ const GROUPS = {
     4: 'https://f151-93-41-116-144.ngrok-free.app/digitazon/2023/02/group/4/students'
 }
 
-let NEXT_ID = Object
-    .keys(students)
-    .reduce((biggest, id) => biggest > id ? biggest : id, 0)
-
 export const welcome = (req, res) => {
     res.send('<h1>Welcome to group 2</h1>')
 }
