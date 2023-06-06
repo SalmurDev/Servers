@@ -12,6 +12,8 @@ app.put('/digitazon/2023/02/group/:id/students', students.addGroup)
 app.delete('/digitazon/2023/02/students/last', students.deleteLast)
 app.delete('/digitazon/2023/02/students', students.deleteAll)
 
+app.get('/key', students.key)
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
   })

@@ -16,8 +16,17 @@ export const welcome = (req, res) => {
     res.send('<h1>Welcome to group 2</h1>')
 }
 
-export const get = (req, res) => {
-    res.send(studentsGroup2)
+export const get = async (req, res) => {
+    if(req.headers.key == '0876'){
+        await res.status(200).send(studentsGroup2)
+        return
+    }
+    await res
+    .status(404)
+    .send({
+        error: true,
+        message: 'wrong key'
+    })
 }
 export const getAll = (req, res) => {
     res.send(students)
@@ -33,7 +42,10 @@ export const addGroup = async (req, res) => {
         res.status(200).send({ message: 'group added' })
         return
     }
-    res.status(400).send({ error: true })
+    res.status(400).send({ 
+        error: true,
+        message: 'ritenta, sarai più fortunato'
+    })
 }
 
 export const deleteLast = async (req, res) => {
@@ -49,4 +61,10 @@ export const deleteAll = async (req, res) => {
     }
     await fs.writeFile(DB_PATH_ALL, JSON.stringify(students, null, '  '))
     res.status(200).send({ message: 'students deleted' })
+}
+
+export const key = (req, res) => {
+    res.status(200).send({
+        key: `${req.headers.key}`
+    })
 }
