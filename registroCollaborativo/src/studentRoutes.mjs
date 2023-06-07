@@ -17,23 +17,26 @@ export const welcome = (req, res) => {
 }
 
 export const get = async (req, res) => {
-    if(req.headers.key == '0876'){
+    if (req.headers.key == '0876') {
         await res.status(200).send(studentsGroup2)
         return
     }
     await res
-    .status(404)
-    .send({
-        error: true,
-        message: 'ritenta, sarai più fortunato'
-    })
+        .status(404)
+        .send({
+            error: true,
+            message: 'ritenta, sarai più fortunato'
+        })
 }
 export const getAll = (req, res) => {
     res.send(students)
 }
 
 export const addGroup = async (req, res) => {
-    const group = await axios.get(`${GROUPS[req.params.id]}`)
+    const group = await axios.get(
+        `${GROUPS[req.params.id]}`,
+        { headers: { key: '0876' } }
+    )
     if (Array.isArray(group.data)) {
         for (let i = 0; i < group.data.length; i++) {
             students.push(group.data[i])
@@ -42,7 +45,7 @@ export const addGroup = async (req, res) => {
         res.status(200).send({ message: 'group added' })
         return
     }
-    res.status(400).send({ 
+    res.status(400).send({
         error: true
     })
 }
