@@ -42,9 +42,8 @@ export const addGroup = async (req, res) => {
         res.status(200).send({ message: 'group added' })
         return
     }
-    res.status(404).send({ 
-        error: true,
-        message: 'ritenta, sarai più fortunato'
+    res.status(400).send({ 
+        error: true
     })
 }
 
