@@ -5,7 +5,7 @@ import * as students from './studentRoutes.mjs'
 const app = express()
 app.use(cors());
 app.use(bodyParser.json())
-const port = 3000
+const port = 8000
 
 app.get('/', students.welcome)
 app.get('/digitazon/2023/02/group/2/students', students.get)

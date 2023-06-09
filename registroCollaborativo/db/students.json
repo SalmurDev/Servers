@@ -21,22 +21,22 @@
   },
   {
     "name": "Filippo",
-    "surname": "Bortolotto",
+    "lastname": "Bortolotto",
     "secret": "barbagianni"
   },
   {
     "name": "Francesco",
-    "surname": "Gentile",
+    "lastname": "Gentile",
     "secret": "mutande"
   },
   {
     "name": "Riccardo",
-    "surname": "Masiero",
+    "lastname": "Masiero",
     "secret": "casa"
   },
   {
     "name": "Davide",
-    "surname": "Grilletto",
+    "lastname": "Grilletto",
     "secret": "ho er cazzo rotto"
   }
 ]

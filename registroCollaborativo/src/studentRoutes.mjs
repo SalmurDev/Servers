@@ -17,16 +17,16 @@ export const welcome = (req, res) => {
 }
 
 export const get = async (req, res) => {
-    if (req.headers.key == '0876') {
+   // if (req.headers.key == '0876') {
         await res.status(200).send(studentsGroup2)
-        return
-    }
-    await res
-        .status(404)
-        .send({
-            error: true,
-            message: 'ritenta, sarai più fortunato'
-        })
+   //     return
+  //  }
+    // await res
+    //     .status(404)
+    //     .send({
+    //         error: true,
+    //         message: 'ritenta, sarai più fortunato'
+    //     })
 }
 export const getAll = (req, res) => {
     res.send(students)
