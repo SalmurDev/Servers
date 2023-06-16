@@ -1,0 +1,116 @@
+{
+  "1": {
+    "name": "Palermo",
+    "photos": [
+      {
+        "name": "fotoModificata",
+        "hashtags": [
+          "#mare",
+          "#sicilia",
+          "#estate",
+          "#coppia"
+        ],
+        "creation": "16-06-2023",
+        "lastModify": "16-06-2023"
+      },
+      {
+        "name": "",
+        "hashtags": [
+          "#mare",
+          "#sicilia"
+        ],
+        "creation": "16-06-2023",
+        "lastModify": false
+      },
+      {
+        "name": "foto brutta",
+        "hashtags": [
+          "#modified"
+        ],
+        "creation": "16-06-2023",
+        "lastModify": "16-06-2023"
+      }
+    ],
+    "hashtags": [
+      "#mare",
+      "#sicilia"
+    ],
+    "creation": "15/06/2023",
+    "lastModify": "16-06-2023",
+    "deleted": true
+  },
+  "2": {
+    "name": "edited album",
+    "photos": [
+      {
+        "name": "foto brutta",
+        "hashtags": [
+          "#mare",
+          "#sicilia"
+        ],
+        "creation": "16-06-2023",
+        "lastModify": false
+      },
+      {
+        "name": "foto1",
+        "hashtags": [
+          "#mare",
+          "#sicilia"
+        ],
+        "creation": "16-06-2023",
+        "lastModify": false
+      },
+      {
+        "name": "foto2",
+        "hashtags": [
+          "#mare",
+          "#sicilia"
+        ],
+        "creation": "16-06-2023",
+        "lastModify": false
+      },
+      {
+        "name": "edited photo",
+        "hashtags": [
+          "#mare",
+          "#sardegna"
+        ],
+        "creation": "16-06-2023",
+        "lastModify": "16-06-2023"
+      },
+      {
+        "name": "foto27",
+        "hashtags": [
+          "#montagna",
+          "#sardegna"
+        ],
+        "creation": "16-06-2023",
+        "lastModify": false
+      }
+    ],
+    "hashtags": [],
+    "creation": "16-06-2023",
+    "lastModify": "16-06-2023"
+  },
+  "3": {
+    "name": "album senza senso",
+    "photos": [],
+    "hashtags": [
+      "#senza",
+      "#senso"
+    ],
+    "creation": "16-06-2023",
+    "lastModify": false
+  },
+  "4": {
+    "name": "album con senso",
+    "photos": [],
+    "hashtags": [
+      "#con",
+      "#senso"
+    ],
+    "creation": "16-06-2023",
+    "lastModify": false,
+    "deleted": true
+  }
+}
